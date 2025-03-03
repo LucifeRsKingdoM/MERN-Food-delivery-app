@@ -6,7 +6,7 @@
 Welcome to **MERN-Food-Delivery-app**, a full-stack **MERN-Pizza-Delivery-Application** built with the **MERN stack** but using **MySQL** instead of MongoDB! 🎯 it has many features. Add to cart functionality, Shopping cart functionality, Product Filtering functionality,  Product page, Cart and checkout page, Contact page, Awesome modern minimalist UI
 
 
-
+![Screenshot 2025-03-03 205424](https://github.com/user-attachments/assets/a9b3ece5-5c93-44f6-8537-46de72217fc7), ![Screenshot 2025-03-03 205823](https://github.com/user-attachments/assets/67917e31-6c47-4ab5-b029-17c2ef1de186), ![Screenshot 2025-03-03 205841](https://github.com/user-attachments/assets/52cfb313-2f90-4079-a997-10525f5535f1), ![Screenshot 2025-03-03 205931](https://github.com/user-attachments/assets/b700fd1f-db87-47c9-926b-4a73f88082e4)
 
 ## 🛠️ Technologies Used
 
