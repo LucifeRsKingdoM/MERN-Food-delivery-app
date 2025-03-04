@@ -59,18 +59,11 @@ Welcome to **MERN-Food-Delivery-app**, a full-stack **MERN-Pizza-Delivery-Applic
 2. Upon login, they receive a **JWT token** for authentication.
 3. The token is stored in **local storage** for session management.
 
-### 📋 Task Management Flow
-
-1. Users can **add new tasks** with descriptions, due dates, and priorities.
-2. Tasks are stored in the **MySQL database** using Sequelize ORM.
-3. Users can **update, delete, or reorder** tasks.
-4. Tasks are fetched dynamically and displayed beautifully.
 
 ### 🏃 Guest Mode Flow
 
 1. Users can use the app **without registering**.
 2. Tasks are stored in **local storage** instead of the database.
-3. If a guest registers, their tasks **won't be saved** permanently.
 
 ---
 
@@ -83,13 +76,13 @@ Make sure you have **Node.js** and **MySQL** installed.
 1️⃣ Clone the repository:
 
 ```bash
- git clone https://github.com/LucifeRsKingdoM/MERN-To_Do_List-App.git
+ git clone [https://github.com/LucifeRsKingdoM/MERN-Food-delivery-app.git]
 ```
 
 2️⃣ Navigate to the project folder:
 
 ```bash
- cd MERN-To_Do_List-App
+ cd MERN-Food-delivery-app
 ```
 
 3️⃣ Install dependencies for **frontend** and **backend**:
@@ -137,7 +130,7 @@ PORT=5000
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
-DB_NAME=mern_todo_db
+DB_NAME=MERN-Food-delivery-app
 JWT_SECRET=your_jwt_secret_key
 ```
 
