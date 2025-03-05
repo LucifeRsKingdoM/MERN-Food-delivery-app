@@ -40,10 +40,6 @@ Welcome to **MERN-Food-Delivery-app**, a full-stack **MERN-Pizza-Delivery-Applic
 
 ✅ **User Authentication** (Register & Login with JWT authentication)\
 ✅ **Guest Mode** (Allows users to create temporary tasks using Local Storage)\
-✅ **Task Management** (Create, Read, Update, Delete tasks)\
-✅ **Task Prioritization** (Low, Medium, High)\
-✅ **Due Dates & Deadlines** (Never miss a task)\
-✅ **Drag and Drop** (Reorder tasks easily using `@hello-pangea/dnd`)\
 ✅ **User Dashboard** (View and manage all tasks)\
 ✅ **Real-time Notifications** (Success & error messages using Toastify)\
 ✅ **Fully Responsive UI** (Works on all devices)\
