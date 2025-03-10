@@ -15,7 +15,7 @@ const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "2003", // Using your MySQL password
-  database: "todo_db",
+  database: "food_db",
 });
 
 db.connect((err) => {
@@ -28,10 +28,9 @@ db.connect((err) => {
 
 // Ensure Users Table Exists
 db.query(
-  `CREATE TABLE IF NOT EXISTS users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
+  `CREATE TABLE Users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   )`,
@@ -42,13 +41,14 @@ db.query(
 
 // Modified Todos Table - Using email instead of user_id
 db.query(
-  `CREATE TABLE IF NOT EXISTS todos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_email VARCHAR(255) NOT NULL,
-    task VARCHAR(255) NOT NULL,
-    completed BOOLEAN DEFAULT false,
-    due_date DATETIME NULL,
-    priority ENUM('High', 'Medium', 'Low') DEFAULT 'Medium',
+  `CREATE TABLE Cart (
+    cart_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    food_name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    rate DECIMAL(10,2) NOT NULL,
+    total DECIMAL(10,2) GENERATED ALWAYS AS (quantity * rate) STORED,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   )`,
   (err) => {
